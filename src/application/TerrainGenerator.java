@@ -52,15 +52,4 @@ public class TerrainGenerator {
     	return map[x][y];
     }
     
-    public boolean[][] toBooleans() {
-        int w = map.length;
-        int h = map[0].length;
-        boolean[][] ret = new boolean[w][h];
-        for(int i = 0;i < w;i++) {
-            for(int j = 0;j < h;j++) {
-                ret[i][j] = map[i][j] < 0;
-            }
-        }
-        return ret;
-    }
 }
